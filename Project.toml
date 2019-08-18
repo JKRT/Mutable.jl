@@ -1,4 +1,4 @@
-name = "Mutable.jl"
+name = "Mutable"
 uuid = "209b28a8-c1df-11e9-056f-d706f835a089"
 authors = ["johti <johti17@liu.se>"]
 version = "0.1.0"

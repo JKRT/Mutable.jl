@@ -27,7 +27,8 @@
 *
 * See the full OSMC Public License conditions for more details.
 *
-*/ =#
+*/
+=#
 
 
 """
