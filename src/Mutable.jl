@@ -31,26 +31,26 @@
 
 
 """
-   Creating mutable (shared) objects
-   This module contains routines for creating and updating objects,
-"""
+     Creating mutable (shared) objects
+     This module contains routines for creating and updating objects,
+  """
 module Mutable
 
-  mutable struct MutableType{T}
-    data::T
-  end
+mutable struct MutableType{T}
+  data::T
+end
 
-  function create(data::T)::MutableType{T} where {T}
-    MutableType(data)
-  end
+function create(data::T)::MutableType{T} where {T}
+  MutableType(data)
+end
 
-  function update(mutable::MutableType{T}, data::T) where {T}
-    mutable.data = data
-  end
+function update(mutable::MutableType{T}, data::T) where {T}
+  mutable.data = data
+end
 
-  function access(mutable::MutableType{T})::T where {T}
-    mutable.data
-  end
+function access(mutable::MutableType{T})::T where {T}
+  mutable.data
+end
 
 export MutableType
 
